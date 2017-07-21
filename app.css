@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+.main-section h1 {
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: bold;
+  color: rgba(58, 66, 97, 0.67);
+  margin-bottom: 25px; 
+}
+
+.nav-section {
+  margin: 30px auto;
+  display: block;
+  position: relative;
+  width: 200px; 
+}
+
+.nav-section button {
+  margin: 30px auto;
+  display: block;
+  position: relative;
+  width: 200px; 
+}
+
+.start-section {
+  position: relative;
+  display: block;
+  margin: 10px auto; 
+}
+
+.start-section img {
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+@media screen and (max-width: 600px) {
+  .start-section img {
+    width: 100%; 
+  } 
+}
+
+.game-section {
+  position: relative; 
+}
+
+.game-section .word-section li span {
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 8px;
+  margin-bottom: 16px;
+  display: inline-block; 
+  font-family: 'Permanent Marker', 'cursive';
+}
+
+.game-section input {
+  width: 60px;
+  font-weight: bold;
+  text-transform: uppercase; 
+}
+
+.game-section ul li {
+  list-style: none;
+  display: inline-block; 
+}
+
+.game-section .counter {
+  color: #FF0000;
+  font-weight: bold; 
+}
+
+.game-section .game-over img {
+  width: 70%;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.game-section .congrate img {
+  width: 30%;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.game-section .uwaga {
+  color: #FF0000; 
+}
+
+.game-section .box {
+  border: 1px solid black;
+  width: 300px;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.game-section .box img {
+  position: absolute; 
+}
+
+.game-section .box .head {
+  top: 15px;
+  left: 55px;
+  z-index: 100; 
+}
+
+.game-section .box .neck {
+  top: 190px;
+  left: 128px; 
+}
+
+.game-section .box .corpus {
+  top: 245px;
+  left: 100px;
+  z-index: 100; 
+}
+
+.game-section .box .left-arm {
+  top: 245px;
+  left: 15px;
+  z-index: 100; 
+}
+
+.game-section .box .right-arm {
+  top: 245px;
+  left: 165px;
+  z-index: 100; 
+}
+
+.game-section .box .left-hand {
+  top: 340px;
+  left: 10px; 
+}
+
+.game-section .box .right-hand {
+  top: 340px;
+  left: 265px; 
+}
+
+.game-section .box .left-leg {
+  top: 395px;
+  left: 67px;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  -ms-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.game-section .box .right-leg {
+  top: 395px;
+  left: 155px; 
+}
+
+.game-section .box .left-foot {
+  top: 560px;
+  left: 30px; 
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  -ms-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.game-section .box .right-foot {
+  top: 560px;
+  left: 190px; 
+}

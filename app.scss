@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+$rotation-angle: 180deg;
+$shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.19);
+
+@mixin rev-image($ang) {
+  -webkit-transform: rotateY($ang);
+     -moz-transform: rotateY($ang);
+       -o-transform: rotateY($ang);
+      -ms-transform: rotateY($ang);
+          transform: rotateY($ang);
+}
+
+.main-section h1 {
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: bold;
+  color: rgba(58, 66, 97, 0.67);
+  margin-bottom: 25px;
+}
+
+.nav-section {
+  margin: 30px auto;
+  display: block;
+  position: relative;
+  width: 200px;
+  button {
+    margin: 30px auto;
+    display: block;
+    position: relative;
+    width: 200px;
+  }
+}
+
+.start-section {
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  img {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: $shadow;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .start-section img {
+    width: 100%;
+  }
+}
+
+.game-section {
+  position: relative;
+  .word-section li span {
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    display: inline-block;
+    font-family: 'Permanent Marker', 'cursive';
+  }
+  input {
+    width: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  .counter {
+    color: #FF0000;
+    font-weight: bold;
+  }
+  .game-over img {
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: $shadow;
+  }
+  .congrate img {
+    width: 30%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: $shadow;
+  }
+  .uwaga {
+    color: #FF0000;
+  }
+  .box {
+    border: 1px solid black;
+    width: 300px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: $shadow;
+    img {
+      position: absolute;
+    }
+    .head {
+      top: 15px;
+      left: 55px;
+      z-index: 100;
+    }
+    .neck {
+      top: 190px;
+      left: 128px;
+    }
+    .corpus {
+      top: 245px;
+      left: 100px;
+      z-index: 100;
+    }
+    .left-arm {
+      top: 245px;
+      left: 15px;
+      z-index: 100;
+    }
+    .right-arm {
+      top: 245px;
+      left: 165px;
+      z-index: 100;
+    }
+    .left-hand {
+      top: 340px;
+      left: 10px;
+    }
+    .right-hand {
+      top: 340px;
+      left: 265px;
+    }
+    .left-leg {
+      top: 395px;
+      left: 67px;
+      @include rev-image($rotation-angle);
+    }
+    .right-leg {
+      top: 395px;
+      left: 155px;
+    }
+    .left-foot {
+      top: 560px;
+      left: 30px;
+      @include rev-image($rotation-angle);
+    }
+    .right-foot {
+      top: 560px;
+      left: 190px;
+    }
+  }
+}
